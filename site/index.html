@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Page </title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <!-- browser-sync start --server --directory --files "*" -->
 <body>
     <header>
-        Hola buenas wenas aaaa
+        Hola buenas wenas 
     </header>
-    <h1> Hello world </h1>
+    <h1 id ="top"> Hello world </h1>
     <h2> Buenas buenas </h2>
     <h3> Wenas </h3>
 
@@ -30,7 +31,19 @@
             <li> &nbsp;none breaking space </li>
             <li> &quot; &quot;</li>
         </ul>
-        <a href="index.html">Click on me</a>
+        <ul>
+            <li><a href="index.html">Click on me</a></li>
+            <li><a href="#section1">ir a la seccion 1</li<a></a></li>
+            <li><a href="#section2">ir a la seccion 2</li<a></a></li>
+            <li><a href="#top">ir al inicio</li<a></a></li>
+        </a>
     </div>
-</body>
-</html> 
+    <a href ="https://www.google.com/search?q=cat&tbm=isch&ved=2ahUKEwjVupLllp_tAhU6uFkKHaYpDY8Q2-cCegQIABAA&oq=cat&gs_lcp=CgNpbWcQAzIHCAAQsQMQQzIFCAAQsQMyBQgAELEDMgQIABBDMgQIABBDMgIIADIECAAQQzIECAAQQzIECAAQQzIECAAQQzoICAAQsQMQgwFQkuASWKrnEmDc6BJoAHAAeACAAaIBiAGhA5IBAzAuM5gBAKABAaoBC2d3cy13aXotaW1nsAEAwAEB&sclient=img&ei=5hS_X9WvCLrw5gKm07T4CA&bih=625&biw=1366" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Young_cats.jpg" width="300" height="300"></a>
+    <section id="section1">
+        [MUSIC] Links pretty much what makes the web what it is. In this lecture, we're going to take a look at different types of links and how you could create them in your HTML page. So the first type of links that we're going to take a look at are internal links. Here I am looking at the file called links-internal.html, and it's located in the examples/Lecture09 folder. And here we have a couple of links we're going to take a look at. Now the way you create links is by specifying an a element with an attribute href. And href stands for hypertext reference. The value of href can either be a relative or an absolute URL. In our case here, since we're discussing internal links which are links that point to internal web pages of the where application, the links we're showing are all relative URL links. However we could still have an even absolute URL links as long as they point, again, to the same web application that we're in. Since we're providing no directory information, the browser will assume that same-directory.html is a file that lives in the same directory as links-internal.html. It's also a very good idea to always specify a title attribute for the a tag. The title attribute is used by the screen readers that help the visually impaired people get through the web page. The content in between the opening and closing a tags is the content you're going to see in the web page, when it is served and on which you're going to be able to click to go to the href that the a tag is configured with. Note the second example of our a tag. In this example, we're surrounding a div tag with our anchor tag. In other words, this div tag is going to be the content over our link on which were going to be able to click. Let's go ahead and see what this look like in the browser?
+    </section>
+    <section id="section2">
+        Okay. So, here is our internal links page, and we have a couple of links. One it says linking to a file in the same directory, and the one is the DIV. That's the a tag surrounding the div tag that says DIV linking to a file in the same directory. And if we click that, we're going to go to this same-directory.html page which basically just provides a link back to our original page. What's interesting to note here is that the first link, linking to a file in the same directory, is clearly an inline tag since it's not forcing itself to go to a new line. But yet in the second case, div linking to a file in the same directory, we're surrounding the div tag with our a tag. So what's going on here? Are we using block level element, the div, inside an inline element? Well, turns out things are little bit more interesting. Let's take a look at the a tag as defined in the W3C specification. If you take a look closely, the a tag is both a flow content and a phrasing content. In other words, to map it back to the HTML four days, the a tag in the HTML5 is both an inline element and a block level element at the same time. And this is what allows us to take the a tag and surround a div tag inside of it. The authors of the HTML5 specification realized that there are a lot of times where you would like to be able to click on a whole region. And a most common occurrence of that is on when you have a logo or some sort of a company name in the top left corner for example, of your webpage. People expect to be able to click on that and be able to go to the front page of the company. Prior to HTML5, people had to use all kinds of tricks in order to achieve that effect because the a tag was only an inline tag, and you weren't really able to wrap the a tag around the div tag.
+    </section>
+</a<img>
+</img> 
