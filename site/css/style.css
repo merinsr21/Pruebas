@@ -1,6 +1,38 @@
-body{
-    font-size: 16px;
-    color:black;
-    background-color: whitesmoke;
+h1, h2, h3 {
+    color: rebeccapurple;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+.aqui li{
+    list-style: none;
+}
+
+div a:link, div a:visited{
+    list-style: none;
+    text-decoration: none;
+    background-color: blue;
+    border: 2px solid black;
+    color: white;
+    display: block;
+    width: 150px;
+    margin-bottom: 2px;
+}
+
+div a:hover, div a:active {
+    background-color: red;
+}
+
+.elementos li{
+    width: 400px;
+    list-style: none;
+    text-align: center;
+}
+
+.elementos li:nth-child(even){
+    background-color: gray;
+}
+
+.elementos li:nth-child(odd){
+    background-color: wheat;
 }
